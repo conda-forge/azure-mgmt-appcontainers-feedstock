@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-mgmt-appcontainers
-  version: 4.0.0
+  version: 5.0.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure_mgmt_appcontainers-${{ version }}.tar.gz
-  sha256: 1731136ca0166c5fbc21a58cd37ea76787d20989e7f95dc12ae627efaf1dc3a5
+  sha256: a3cb592741f09a2d8d63a68a202eb62a2daaf0b1c42c2bc160c2018e5b340efe
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - python >=${{ python_min }}
     - typing_extensions >=4.6.0
     - azure-mgmt-core >=1.6.0
-    - msrest >=0.7.1
+    - isodate >=0.6.1
 tests:
   - python:
       imports:
