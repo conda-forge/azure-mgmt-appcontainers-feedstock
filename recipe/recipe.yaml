@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-mgmt-appcontainers
-  version: 5.0.0
+  version: "5.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure_mgmt_appcontainers-${{ version }}.tar.gz
-  sha256: a3cb592741f09a2d8d63a68a202eb62a2daaf0b1c42c2bc160c2018e5b340efe
+  sha256: d218843a49271cc4a47094bd543d491371dfd9254496a67a37359227631e53c2
 
 build:
   number: 0
